@@ -11,7 +11,8 @@ const[showInput, setShowInput] = useState(false)
             <h2 onClick={(e)=> {setShowInput(!showInput)}}> {todo.text} </h2>
             <input style={{ display: showInput ? "block" : "none" }} type="text" onKeyDown={(e) => {
             if (e.key === "Enter") {
-              editTodoText(todo.id, e) setShowInput(false) 
+              editTodoText(todo.id, e) 
+              setShowInput(false) 
               } 
               }}/>
         </div>

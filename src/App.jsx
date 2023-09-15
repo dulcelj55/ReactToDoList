@@ -1,12 +1,12 @@
 import './App.css'
-import ToDo from './Components/ToDo'
+
 import ToDoList from './Components/ToDoList'
 import {useState, useEffect} from 'react'
 
 
 
 
-const App = (props) => {
+const App = () => {
 
     const[todos, setTodos]= useState([])
       
@@ -49,10 +49,11 @@ const App = (props) => {
         completeTodo={completeTodo}
         editTodoText={editTodoText}
         deleteTodo={deleteTodo}
+
         />
-        <ToDo/>
+      
     </div>
-  )
+  );
 }
 
 export default App
